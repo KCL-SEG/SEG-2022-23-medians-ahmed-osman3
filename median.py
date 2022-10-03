@@ -5,7 +5,8 @@ while True:
     try:
         print("Enter a list of numbers separated by commas: ")
         numbers = [float(value) for value in input().split(",")]
-        numbers.sort
+        numbers.sort()
+        print(numbers)
     except ValueError:
         print("Some input could not be converted to a number!")
     else:
@@ -14,6 +15,7 @@ if(len(numbers) % 2 == 0):
     print((int(numbers[len(numbers/2)]) + int(len(numbers/2 + 1)))/2)
 else:
     print(numbers[int(len(numbers)/2)])
+    
 
 
 
