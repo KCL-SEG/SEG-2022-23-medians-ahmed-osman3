@@ -13,7 +13,8 @@ while True:
         break
 if(len(numbers) % 2 == 0):
     num = int(len(numbers)/2)
-    print((numbers[num] + numbers[num+1]) /2)
+    print(num)
+    print((numbers[num] + numbers[num-1]) /2)
 else:
     print(numbers[int(len(numbers)/2)])
     
